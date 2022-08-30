@@ -1,0 +1,37 @@
+body{
+    background-image: url("../images/undraw_Questions_re_1fy7.png");
+}
+
+nav{
+    display: flex;
+    background: #002B5B;
+    color: white;
+    justify-content: center;
+    border-radius: 10px;
+}
+h1{
+    font-size: 30px;
+}
+#welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    background: #002B5B;
+    opacity: 85%;
+    padding-bottom: 150px;
+    max-width:50%;
+    border-radius: 10px;
+}
+section.display{
+
+}
+.btn{
+    background-color: green;
+    border-radius: 10px;
+    
+}
