@@ -1,7 +1,12 @@
+*{
+    backdrop-filter: blur(10px);
+    
+}
 body{
     background-image: url("../images/undraw_Questions_re_1fy7.png");
     background-repeat: no-repeat;
     background-size: 73%;
+    
 }
 
 nav{
@@ -10,7 +15,6 @@ nav{
     color: white;
     justify-content: space-evenly;
     border-radius: 5px;
-    /* box-shadow: 10px; */
 }
 #logo{
     height: 60px;
@@ -31,13 +35,10 @@ h1{
 section{
     display: flex;
     justify-content: space-evenly;
-    /* background: #002B5B; */
     opacity: 85%;
-    padding-bottom: 150px;
-    /* max-width:50%; */
+    padding: 50px;
     border-radius: 10px;
-    /* transform: translate(50% , 50%); */
-    
+    height: 200px;
 }
 
 #category{
@@ -54,8 +55,16 @@ section{
 
 }
 
+.startbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn{
-    background-color: green;
+    background: green;
     border-radius: 7px;
-    
+    /* width: 50%; */
+    /* padding: 10px 150px 5px 150px; */
+    width:120px;
+    margin:0 auto;
 }
