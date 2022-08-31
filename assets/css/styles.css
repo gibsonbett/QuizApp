@@ -1,8 +1,8 @@
 
 body{
-    background-image: url("../images/undraw_Questions_re_1fy7.png");
+    background-image: url("../images/aaron-burden-ttK9EJGafjQ-unsplash.jpg");
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
     backdrop-filter: blur(10px);
     box-sizing: border-box;
     overflow: hidden;
@@ -44,6 +44,7 @@ section{
     border-radius: 10px;
     height: 200px;
     color: white;
+    /* flex-direction: column; */
     
 }
 
@@ -76,5 +77,5 @@ section{
     border-radius: 7px;
     padding: 10px 150px 5px 150px;
     /* width:120px; */
-    margin: auto;
+    margin-right: 600px;
 }
