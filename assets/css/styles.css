@@ -2,7 +2,6 @@
 body{
     background-image: url("../images/undraw_Questions_re_1fy7.png");
     background-repeat: no-repeat;
-    /* position: absolute; */
     height: 100vh;
     backdrop-filter: blur(10px);
     box-sizing: border-box;
@@ -12,20 +11,24 @@ body{
 
 nav{
     display: flex;
-    background: #002B5B;
+    background: #256D85;
     color: white;
     justify-content: space-evenly;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 #logo{
     height: 60px;
     width: 60px;
-    padding-top: 12px;
-    padding-right: 400px;
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-right: 450px;
+    border-radius: 15px;
 }
 h1{
     font-size: 30px;
     padding-right: 550px;
+    font-style: oblique;
+    /* font-weight: 800; */
 }
 #welcome{
     display: flex;
@@ -35,7 +38,7 @@ h1{
 
 section{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     opacity: 75%;
     padding: 50px;
     border-radius: 10px;
@@ -45,18 +48,22 @@ section{
 }
 
 #category{
-    background: #002B5B;
+    background: #256D85;
     padding: 0 20px 150px;
     border-radius: 10px;
     
 }
 
 #level{
-    background: #002B5B;
+    background: #256D85;
     padding: 0 20px 150px;
     border-radius: 7px;
 
 }
+/* inputform{
+    border-radius: 10px;
+
+} */
 
 .startbtn{
     display: flex;
@@ -64,10 +71,10 @@ section{
     align-items: center;
 }
 .btn{
-    background: green;
+    background: #8FE3CF;
+    font-weight: 700;
     border-radius: 7px;
-    /* width: 50%; */
-    /* padding: 10px 150px 5px 150px; */
-    width:120px;
-    margin:0 auto;
+    padding: 10px 150px 5px 150px;
+    /* width:120px; */
+    margin: auto;
 }
