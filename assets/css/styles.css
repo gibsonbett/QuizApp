@@ -1,12 +1,13 @@
-*{
-    backdrop-filter: blur(10px);
-    
-}
+
 body{
     background-image: url("../images/undraw_Questions_re_1fy7.png");
     background-repeat: no-repeat;
-    background-size: 73%;
-    
+    /* position: absolute; */
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    overflow: hidden;
+
 }
 
 nav{
@@ -35,17 +36,19 @@ h1{
 section{
     display: flex;
     justify-content: space-evenly;
-    opacity: 85%;
+    opacity: 75%;
     padding: 50px;
     border-radius: 10px;
     height: 200px;
+    color: white;
+    
 }
 
 #category{
     background: #002B5B;
     padding: 0 20px 150px;
     border-radius: 10px;
-
+    
 }
 
 #level{
