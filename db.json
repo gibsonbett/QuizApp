@@ -1,44 +1,40 @@
 {
     "results": [
-        
         {
-            "id":1,
-            "question": "The &quot;Tibia&quot; is found in which part of the body?",
-            "correct_answer": "Leg",
-            "incorrect_answers": [
-                "Arm",
-                "Hand",
-                "Head"
-            
-            ]
+            "id": 1,
+            "question": "Which language runs in a web browser?",
+            "a": "Java",
+            "b": "C",
+            "c": "Python",
+            "d": "Javascript",
+            "correct": "d"
         },
         {
-            "id":2,
-            "question": "The full English name of the car manufacturer BMW is Bavarian Motor Works",
-            "correct_answer": "True",
-            "incorrect_answers": [
-                "False"
-            ]
+            "id": 1,
+            "question": "Which language runs in a web browser?",
+            "a": "Java",
+            "b": "C",
+            "c": "Python",
+            "d": "Javascript",
+            "correct": "d"
         },
         {
-            "id":3,
-            "question": "In Monster Hunter Generations, which of these hunter arts are exclusive to the Longsword?",
-            "correct_answer": "Unhinged Spirit",
-            "incorrect_answers": [
-                "Shoryugeki",
-                "Provoke",
-                "Demon Riot"
-            ]
+            "id": 1,
+            "question": "Which language runs in a web browser?",
+            "a": "Java",
+            "b": "C",
+            "c": "Python",
+            "d": "Javascript",
+            "correct": "d"
         },
         {
-            "id":4,
-            "question": "Aperture Science CEO Cave Johnson is voiced by which American actor?",
-            "correct_answer": "J.K. Simmons",
-            "incorrect_answers": [
-                "Nolan North",
-                "John Patrick Lowrie",
-                "Christopher Lloyd"
-            ]
+            "id": 1,
+            "question": "Which language runs in a web browser?",
+            "a": "Java",
+            "b": "C",
+            "c": "Python",
+            "d": "Javascript",
+            "correct": "d"
         }
     ]
 }
