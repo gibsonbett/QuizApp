@@ -1,19 +1,21 @@
 
 body{
-    background-image: url("../images/aaron-burden-ttK9EJGafjQ-unsplash.jpg");
+    background-image: url("../images/charlesdeluvio-Lks7vei-eAg-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(10px);
-    box-sizing: border-box;
+    /* backdrop-filter: blur(10px); */
+    /* box-sizing: border-box; */
     overflow: hidden;
 
 }
 
 nav{
     display: flex;
+    width: 100%;
     background: #256D85;
     color: white;
     justify-content: space-evenly;
+    /* opacity: 55%; */
     /* border-radius: 5px; */
 }
 #logo{
@@ -39,7 +41,7 @@ h1{
 section{
     display: flex;
     justify-content: space-around;
-    opacity: 75%;
+    /* opacity: 55%; */
     padding: 50px;
     border-radius: 10px;
     height: 200px;
@@ -72,10 +74,11 @@ section{
     align-items: center;
 }
 .btn{
-    background: #8FE3CF;
+    background: green;
+    /* opacity: 85%; */
     font-weight: 700;
     border-radius: 7px;
-    padding: 10px 150px 5px 150px;
+    padding: 10px 100px 5px 100px;
     /* width:120px; */
     margin-right: 600px;
 }
