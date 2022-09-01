@@ -1,9 +1,9 @@
 
 body{
-    background-image: url("../images/charlesdeluvio-Lks7vei-eAg-unsplash.jpg");
+    background-image: url("../images/B&W-laptop");
     background-repeat: no-repeat;
     background-size: cover;
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(5px);
     /* box-sizing: border-box; */
     overflow: hidden;
 
@@ -21,7 +21,7 @@ nav{
 #logo{
     height: 60px;
     width: 60px;
-    border-radius: 8px;
+    border-radius: 5px;
     padding-top: 15px;
     padding-right: 450px;
     border-radius: 15px;
@@ -36,6 +36,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 section{
@@ -52,15 +53,15 @@ section{
 
 #category{
     background: #256D85;
-    padding: 0 100px 150px 100px;
-    border-radius: 10px;
+    padding: 0 300px 200px 300px;
+    border-radius: 4px;
     
 }
 
 #level{
     background: #256D85;
     padding: 0 20px 150px;
-    border-radius: 7px;
+    border-radius: 4px;
 
 }
 /* inputform{
@@ -73,12 +74,12 @@ section{
     justify-content: center;
     align-items: center;
 }
-.btn{
+/* .btn{
     background: green;
-    /* opacity: 85%; */
+    opacity: 85%;
     font-weight: 700;
     border-radius: 7px;
     padding: 10px 100px 5px 100px;
-    /* width:120px; */
+    width:120px;
     margin-right: 600px;
-}
+} */
