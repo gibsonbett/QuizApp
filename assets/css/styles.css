@@ -1,9 +1,9 @@
 
 body{
     background-image: url("../images/B&W-laptop");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
     /* box-sizing: border-box; */
     overflow: hidden;
 
@@ -12,7 +12,7 @@ body{
 nav{
     display: flex;
     width: 100%;
-    background: #256D85;
+    background: #607EAA;
     color: white;
     justify-content: space-evenly;
     /* opacity: 55%; */
@@ -43,37 +43,49 @@ section{
     display: flex;
     justify-content: space-around;
     /* opacity: 55%; */
-    padding: 50px;
+    padding: auto;
     border-radius: 10px;
-    height: 200px;
+    height: auto;
     color: white;
     /* flex-direction: column; */
     
 }
 
 #category{
-    background: #256D85;
-    padding: 0 300px 200px 300px;
+    display: flex;
+    justify-content: flex-start;
+    background: #607EAA;
+    padding: 20px 300px 200px 300px;
     border-radius: 4px;
+    width: auto;
+    height: auto;
     
 }
-
-#level{
-    background: #256D85;
+P{
+    width: 100%;
+    color: black;
+}
+#header{
+    display: flex;
+flex-direction: column;
+padding: 10px
+}
+/* #level{
+    background: #607EAA;
     padding: 0 20px 150px;
     border-radius: 4px;
 
-}
+} */
 /* inputform{
     border-radius: 10px;
 
 } */
 
-.startbtn{
+/* .startbtn{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 /* .btn{
     background: green;
     opacity: 85%;
