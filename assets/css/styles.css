@@ -2,21 +2,26 @@
 body{
     background-image: url("../images/B&W-laptop");
     /* background-repeat: no-repeat; */
-    background-size: cover;
+    /* background-size: cover; */
     backdrop-filter: blur(3px);
     /* box-sizing: border-box; */
-    overflow: hidden;
-
+    /* overflow: hidden; */
+    height: 100vh;
 }
-
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 nav{
     display: flex;
     width: 100%;
     background: #607EAA;
-    color: white;
+    color: #DCD7C9;
     justify-content: space-evenly;
     /* opacity: 55%; */
-    /* border-radius: 5px; */
+    border-radius: 5px;
 }
 #logo{
     height: 60px;
@@ -36,7 +41,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #DCD7C9;
 }
 
 section{
@@ -46,30 +51,79 @@ section{
     padding: auto;
     border-radius: 10px;
     height: auto;
-    color: white;
+    color: #DCD7C9;
     /* flex-direction: column; */
     
 }
 
 #category{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     background: #607EAA;
-    padding: 20px 300px 200px 300px;
+    opacity: 85%;
+    padding: 35px;
     border-radius: 4px;
-    width: auto;
-    height: auto;
+    width: 60%;
+    height:fit-content;
     
 }
+#form_input{
+width: inherit;
+/* height: inherit; */
+
+/* height:fit-content; */
+}
+#input_section{
+    padding: 3px;
+    border-radius: 4px;
+    background-color: #DCD7C9;
+}
+#get_questions{
+    border-radius: 4px;
+    background-color: #DCD7C9;
+}
+#question{
+    padding: 20px;
+    height: max-content;
+}
+
 P{
     width: 100%;
     color: black;
+    font-weight: 550;
+    font-size: 18px;
 }
+P button{
+    width: 200px;
+    padding: 6px;
+    border-radius: 5px;
+
+}
+P button:hover{
+    cursor: default;
+}
+
 #header{
     display: flex;
-flex-direction: column;
-padding: 10px
+    flex-direction: column;
+    padding: 10px;
+    /* height: 190px; */
 }
+.display span {
+    color: black;
+    display: flex;
+    text-decoration: underline;
+    /* align-items: ; */
+}
+footer{
+    display: flex;
+    background-color: #DCD7C9;
+    padding: 15px;
+}
+
+/* .display span h4{ */
+    /* justify-content: flex-end; */
+/* } */
 /* #level{
     background: #607EAA;
     padding: 0 20px 150px;
