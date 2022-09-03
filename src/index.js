@@ -1,13 +1,5 @@
 const initialize= () => {
-    // question.document.addEventListener("DOMContentLoaded", initialize)
-    // const question = document.getElementById("question")
 
-    // function iterateFunction(objQn){
-    //     for (let i = 0; i < objQn.length; i++){
-            
-
-    //     }
-    // }
 
     let submit =document.getElementById("form_input")
     submit.addEventListener("submit", (e)=> {
@@ -18,70 +10,67 @@ const initialize= () => {
         .then((res) => res.json())
         .then((data) => analyseData(data))
     })  
+    
+    let btn1;
+    let btn2;
+    let btn3;
+    let btn4;
+
 function analyseData(quizBank){
+
     let P = document.getElementById('header');
-    P.innerHTML = quizBank.question;
+    P.innerHTML = quizBank.question
     let p1 = document.createElement('button')
     let p2=document.createElement('button')
     let p3=document.createElement('button')
     let p4=document.createElement('button')
+    let answer=quizBank.correct;
+
     p1.innerHTML=quizBank.a;
     p2.innerHTML=quizBank.b
     p3.innerHTML=quizBank.c
     p4.innerHTML=quizBank.d
+
     P.appendChild(p1)
     P.appendChild(p2)
     P.appendChild(p3)
     P.appendChild(p4)
+    
 
+   
+   function chooseAnswer(){
+
+    p1.addEventListener("click", ()=>{
+        btn1=p1.innerHTML;
+    })
+
+    p2.addEventListener("click", ()=>{
+    btn2=p2.innerHTML; 
+    })
+
+   p3.addEventListener("click", ()=>{
+    btn3=p3.innerHTML;
+    // console.log(btn3)
+   })
+   p4.addEventListener("click", ()=>{
+    btn4=p4.innerHTML;
+    // console.log(btn4)
+   })
+    if(btn1 === answer || btn2 === answer || btn3 === answer ||btn4 === answer
+        ){
+        document.getElementById('answer').innerHTML='Correct Answer'
+    }
+    else{
+        document.getElementById('answer').innerHTML="Incorrect Answer"
+    }
+   }
+   chooseAnswer()
+}
 
     
 
 }
-}
+
 document.addEventListener("DOMContentLoaded", initialize)
 
 
-// // const input = document.getElementById('btn');
-// // input.addEventListener('click', function() {
-// //   alert('I was clicked!');
-// // });
-
-// const init = () => {
-//     const inputForm =document.getElementById('get_questions')
-  
-//     inputForm.addEventListener('submit', (event) => {
-//       event.preventDefault();
-//       const input = document.getElementById('input_section');
-//       fetch(`http://localhost:3000/results/${input.value}`)
-//       .then(response => response.json())
-//       .then(data => console.log(data));
-//     });
-  
-//     // function analyseData(clothes){
-// //         const h4=document.getElementById('header')
-// //          h4.innerHTML=quizBank.question;
-// // li.innerHTML=`${results.question} ${results.question}`;
-// //         // ul.appendChild(li)
-      
-      
-//     //   }
-    
-//     }
-  
-// //   document.addEventListener('DOMContentLoaded', init);
-  
-  
-  
-//   // document.getElementById('search_clothes').addEventListener('submit',searchClothes)
-//   // function fetchData(){
-//   //   fetch('http://localhost:3000/Clothes')
-//   // .then(resp=>resp.json())
-//   // .then(data=>searchClothes(data))
-//   // }
-//   // fetchData()
-  
-//   // function searchClothes(){
-  
-  
-//   }
