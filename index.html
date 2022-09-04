@@ -33,11 +33,11 @@
                     <div id="question">
                         <p id="header"></p>
                     </div>
-                    <div id="level" class="display">
-                        <span><h4 id="results">Results</h4></span>
-                        <p id="answer"></p>
-                    </div>
                 </form>
+                <div id="level" class="display">
+                    <span><h4 id="results">Result</h4></span>
+                    <p id="answer"></p>
+                </div>
             </div>
             <!-- <div id="choices"></div> -->
         </section>
@@ -50,8 +50,13 @@
                 <a href="#">About Us</a>
                 <a href="#">Privacy Policy</a>
             </div>
-            <h6>Subscribe to Our Monthly Newsletter.</h6>
-            <form action="" method="POST" aria-placeholder="Enter your email"></form>
+            <div>
+                <h6>Subscribe to Our Monthly Newsletter.</h6>
+                <form action="" method="POST" id="subscribeForm">
+                    <input type="text" placeholder="Enter your email" id="subscribe">
+                    <input type="submit" id="submitComments">
+                </form>
+            </div>
         </footer>
     </div>
     <script src="./src/index.js"></script>
