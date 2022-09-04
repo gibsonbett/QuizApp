@@ -7,6 +7,8 @@ body{
     /* box-sizing: border-box; */
     /* overflow: hidden; */
     height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 .container{
     display: flex;
@@ -22,6 +24,9 @@ nav{
     justify-content: space-evenly;
     /* opacity: 55%; */
     border-radius: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 #logo{
     height: 60px;
@@ -80,7 +85,12 @@ width: inherit;
 }
 #get_questions{
     border-radius: 4px;
+    padding: 3px;
     background-color: #DCD7C9;
+}
+#get_questions:hover{
+    cursor: pointer;
+    background: #7C3E66;
 }
 #question{
     padding: 20px;
@@ -99,8 +109,21 @@ P button{
     border-radius: 5px;
 
 }
-P button:hover{
-    cursor: default;
+#p1:hover{
+    cursor: pointer;
+    background: #7C3E66;
+}
+#p2:hover{
+    cursor: pointer;
+    background: #7C3E66;
+}
+#p3:hover{
+    cursor: pointer;
+    background: #7C3E66;
+}
+#p4:hover{
+    cursor: pointer;
+    background: #7C3E66;
 }
 
 #header{
@@ -117,35 +140,28 @@ P button:hover{
 }
 footer{
     display: flex;
+    justify-content: space-around;
     background-color: #DCD7C9;
-    padding: 15px;
+    /* padding: 0px 20px 0px 10px; */
+    /* height: 80px; */
 }
 
-/* .display span h4{ */
-    /* justify-content: flex-end; */
-/* } */
-/* #level{
-    background: #607EAA;
-    padding: 0 20px 150px;
-    border-radius: 4px;
+a{
+    /* display: flex; */
+    /* flex-direction: column; */
+    display: inline-block;
+    /* justify-content: space-around; */
+margin-top: 35px;    
+padding: 10px;
+}
+h6{
+    font-size: 15px;
+}
+#submitComments{
+    margin-bottom: 20px;
+}
 
-} */
-/* inputform{
-    border-radius: 10px;
-
-} */
-
-/* .startbtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-/* .btn{
-    background: green;
-    opacity: 85%;
-    font-weight: 700;
-    border-radius: 7px;
-    padding: 10px 100px 5px 100px;
-    width:120px;
-    margin-right: 600px;
-} */
+#submitComments:hover{
+    cursor: pointer;
+    background: #7C3E66;
+}
