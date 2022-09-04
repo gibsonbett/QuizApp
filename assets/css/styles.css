@@ -1,46 +1,49 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
 body{
     background-image: url("../images/B&W-laptop");
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    backdrop-filter: blur(3px);
-    /* box-sizing: border-box; */
-    /* overflow: hidden; */
-    height: 100vh;
+    backdrop-filter: blur(7px);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    background-position-y: center;
+    background-position-x: center
 }
 .container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;  
 }
 nav{
     display: flex;
     width: 100%;
-    background: #607EAA;
-    color: #DCD7C9;
+    background: #41313b;
+    color: white;
     justify-content: space-evenly;
-    /* opacity: 55%; */
+    opacity: 85%;
     border-radius: 5px;
     position: sticky;
     top: 0;
     z-index: 100;
+    border: 1px solid #A5C9CA;
+    box-shadow: 0 0 5px #E7F6F2;
 }
 #logo{
     height: 60px;
     width: 60px;
-    border-radius: 5px;
-    padding-top: 15px;
-    padding-right: 450px;
+    border-radius: 50%;
+    padding: 8px;
     border-radius: 15px;
 }
 h1{
     font-size: 30px;
     padding-right: 550px;
+    padding-top: 13px;
     font-style: oblique;
-    /* font-weight: 800; */
 }
 #welcome{
     display: flex;
@@ -48,35 +51,27 @@ h1{
     align-items: center;
     color: #DCD7C9;
 }
-
 section{
     display: flex;
     justify-content: space-around;
-    /* opacity: 55%; */
-    padding: auto;
     border-radius: 10px;
-    height: auto;
     color: #DCD7C9;
-    /* flex-direction: column; */
     
 }
-
 #category{
     display: flex;
     justify-content: space-between;
-    background: #607EAA;
+    background: #41313b;
     opacity: 85%;
     padding: 35px;
     border-radius: 4px;
     width: 60%;
     height:fit-content;
-    
+    border: 1px solid #A5C9CA;
+    box-shadow: 0 0 8px #E7F6F2; 
 }
 #form_input{
 width: inherit;
-/* height: inherit; */
-
-/* height:fit-content; */
 }
 #input_section{
     padding: 3px;
@@ -90,16 +85,15 @@ width: inherit;
 }
 #get_questions:hover{
     cursor: pointer;
-    background: #7C3E66;
+    background: #41313b;
 }
 #question{
     padding: 20px;
     height: max-content;
 }
-
 P{
     width: 100%;
-    color: black;
+    color: #DCD7C9;
     font-weight: 550;
     font-size: 18px;
 }
@@ -107,61 +101,63 @@ P button{
     width: 200px;
     padding: 6px;
     border-radius: 5px;
-
 }
-#p1:hover{
+#choice1:hover{
     cursor: pointer;
-    background: #7C3E66;
+    background: #b8a6b1;
 }
-#p2:hover{
+#choice2:hover{
     cursor: pointer;
-    background: #7C3E66;
+    background: #b8a6b1;
 }
-#p3:hover{
+#choice3:hover{
     cursor: pointer;
-    background: #7C3E66;
+    background: #b8a6b1;
 }
-#p4:hover{
+#choice4:hover{
     cursor: pointer;
-    background: #7C3E66;
+    background: #b8a6b1;
 }
-
 #header{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    /* height: 190px; */
 }
 .display span {
-    color: black;
+    color: white;
     display: flex;
     text-decoration: underline;
-    /* align-items: ; */
 }
 footer{
     display: flex;
     justify-content: space-around;
     background-color: #DCD7C9;
-    /* padding: 0px 20px 0px 10px; */
-    /* height: 80px; */
+    border: 1px solid #A5C9CA;
+    box-shadow: 0 0 3px #E7F6F2;
 }
-
 a{
-    /* display: flex; */
-    /* flex-direction: column; */
     display: inline-block;
-    /* justify-content: space-around; */
-margin-top: 35px;    
-padding: 10px;
+    margin-top: 15px;    
+    padding: 10px;
+    color: #41313b;
 }
 h6{
+    padding-top: 15px;
     font-size: 15px;
+    color: #41313b;
+}
+#subscribe{
+    height: 25px;
+}
+#subscribeForm{
+    padding: 10px;
 }
 #submitComments{
-    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 3px;
+    background-color: #DCD7C9;
 }
-
 #submitComments:hover{
     cursor: pointer;
-    background: #7C3E66;
+    background: #41313b;
 }
