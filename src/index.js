@@ -1,5 +1,9 @@
+// wite a function that will enable the content to load on the DOM
 const initialize= () => {
-
+ 
+    // write a function that fetchs questions from the local server
+    function fetchQuestions(){
+    
     let submit =document.getElementById("form_input")
     submit.addEventListener("submit", (e)=> {
         e.preventDefault();
@@ -7,25 +11,28 @@ const initialize= () => {
 
         fetch(`http://localhost:3000/Questions/${input.value}`)
         .then((res) => res.json())
-        .then((data) => analyzeData(data))
+        .then((data) => setQuestion(data))
     })  
+
+}fetchQuestions()
 
     let btn1;
     let btn2;
     let btn3;
     let btn4;
 
-    choice1.addEventListener("click",chooseAnswer)
-    choice2.addEventListener("click", chooseAnswer)
-   choice3.addEventListener("click", chooseAnswer)
-   choice.addEventListener("click", chooseAnswer)
+    btn1.addEventListener("click",chooseAnswer)
+    btn2.addEventListener("click", chooseAnswer)
+    btn3.addEventListener("click", chooseAnswer)
+    btn4.addEventListener("click", chooseAnswer)
    
-        btn1=choice1.innerHTML
-         btn2=choice2.innerHTML
-         btn3=choice3.innerHTML;
-         btn4=choice.innerHTML;
+    btn1=choice1.innerHTML
+    btn2=choice2.innerHTML
+    btn3=choice3.innerHTML;
+    btn4=choice4.innerHTML;
 
-function analyzeData(quizBank){
+    // write a function that displays questions on the DOM when user clicks the submit button
+function setQuestion(quizBank){
 
     let allChoices = document.getElementById('header');
     allChoices.innerHTML = quizBank.question
@@ -39,47 +46,42 @@ function analyzeData(quizBank){
     let choice3=document.createElement('button')
     choice3.setAttribute('id','choice3')
 
-    let choice=document.createElement('button')
-    choice.setAttribute('id','choice')
+    let choice4=document.createElement('button')
+    choice4.setAttribute('id','choice4')
 
     let answer=quizBank.correct;
 
     choice1.innerHTML=quizBank.a;
     choice2.innerHTML=quizBank.b
     choice3.innerHTML=quizBank.c
-    choice.innerHTML=quizBank.d
+    choice4.innerHTML=quizBank.d
 
     allChoices.appendChild(choice1)
     allChoices.appendChild(choice2)
     allChoices.appendChild(choice3)
-    allChoices.appendChild(choice)
+    allChoices.appendChild(choice4)
 
    
-
+//  write a function that enables users choose answers and display them in the DOM
    function chooseAnswer(){
     
-    if(btn1 === answer || btn2 === answer || btn3 === answer ||btn4 === answer
+    if(btn1 === answer && btn2 === answer && btn3 === answer && btn4 === answer
         ){
-            alert("Your answer is correct")
-        // document.getElementById('answer').innerHTML='Correct Answer'
+        document.getElementById('answer').innerHTML='Correct Answer'
     }
     else{
-        alert("Your answer is incorrect")
-
-        // document.getElementById('answer').innerHTML="Incorrect Answer"
+        document.getElementById('answer').innerHTML="Incorrect Answer"
     }
-    // document.getElementById("form_input").reset()
+    document.getElementById("form_input").reset()
    }
+
+
    chooseAnswer()
 }
-
-    
 
 }
 
 document.addEventListener("DOMContentLoaded", initialize)
-
-
 document.getElementById("subscribeForm").addEventListener("submit", postComments)
 
 function postComments(e){
@@ -90,7 +92,7 @@ function postComments(e){
     }
     postToJson(email)
 }
-
+// write a function that adds comments to the server
 function postToJson(user){
     fetch("http://localhost:3000/comments", {
         method: "POST",
@@ -100,5 +102,4 @@ function postToJson(user){
          body: JSON.stringify(user)
     })
     .then(res=> res.json())
-    
 }
