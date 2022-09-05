@@ -1,4 +1,4 @@
-// wite a function that will enable the content to load on the DOM
+ // wite a function that will load content on the DOM
 const initialize= () => {
  
     // write a function that fetchs questions from the local server
@@ -14,7 +14,7 @@ const initialize= () => {
         .then((data) => setQuestion(data))
     })  
 
-}fetchQuestions()
+    }fetchQuestions()
 
     let btn1;
     let btn2;
@@ -31,8 +31,8 @@ const initialize= () => {
     btn3=choice3.innerHTML;
     btn4=choice4.innerHTML;
 
-    // write a function that displays questions on the DOM when user clicks the submit button
-function setQuestion(quizBank){
+// write a function that displays questions on the DOM when user clicks the submit button
+    function setQuestion(quizBank){
 
     let allChoices = document.getElementById('header');
     allChoices.innerHTML = quizBank.question
@@ -80,17 +80,23 @@ function setQuestion(quizBank){
 }
 
 }
+ document.addEventListener("DOMContentLoaded", initialize)
 
-document.addEventListener("DOMContentLoaded", initialize)
-document.getElementById("subscribeForm").addEventListener("submit", postComments)
+   
+ 
 
-function postComments(e){
-    e.preventDefault()
 
-    let email= {
-        email: e.target.subscribe.value
-    }
-    postToJson(email)
+
+ 
+    document.getElementById("subscribeForm").addEventListener("submit", postComments)
+
+    function postComments(e){
+        e.preventDefault()
+
+        let email= {
+            email: e.target.subscribe.value
+        }
+        postToJson(email)
 }
 // write a function that adds comments to the server
 function postToJson(user){
