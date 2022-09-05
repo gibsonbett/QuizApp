@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
     background-image: url("../images/B&W-laptop");
     backdrop-filter: blur(3px);
     background-position-y: center;
-    background-position-x: center
+    background-position-x: center;
+    font-family: 'Playfair Display', serif;
+
 }
 .container{
     display: flex;
@@ -58,7 +59,8 @@ section{
     justify-content: space-around;
     border-radius: 10px;
     color: #DCD7C9;
-    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 #category{
     display: flex;
